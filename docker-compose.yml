@@ -6,19 +6,13 @@ services:
       - "30080:80"
     hostname: cloudant
     network_mode: bridge
-    labels:
-      - "com.exampleup.proxy.name.30080:Cloudant"
-      - "com.exampleup.proxy.path.30080:/dashboard.html"
   pixiedust:
     image: markwatsonatx/pixiedust-python27-spark163-alpine:1.0.5    
     volumes:
-      - ./data:/usr/data
-      - ./notebooks:/usr/notebooks
+      - ./src/data:/usr/data
+      - ./src/notebooks:/usr/notebooks
     ports:
       - "38888:8888"
     links:
       - db
     network_mode: bridge
-    labels:
-      - "com.exampleup.proxy.name.38888:PixieDust"
-      - "com.exampleup.proxy.path.38888:/notebooks/PixieDust.ipynb"
