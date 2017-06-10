@@ -15,7 +15,7 @@
         "port": 38888,
         "hide": false,
         "name": "PixieDust",
-        "path": ":/notebooks/PixieDust.ipynb"
+        "path": "/notebooks/PixieDust.ipynb"
       }
     ]
   }
