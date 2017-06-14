@@ -1,7 +1,6 @@
 {
   "editor" : {
-    "hide": false,
-    "srcDir": "src"
+    "hide": true 
   },
   "proxy": {
     "ports": [
